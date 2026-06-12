@@ -1,0 +1,5 @@
+From python:slim
+WORKDIR ~
+COPY file.py .
+RUN pip install flask
+CMD ["python","file.py"] 
