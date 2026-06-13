@@ -17,7 +17,7 @@ jobs:
             script: |
                 cd ~
                 git pull origin master
-                docker build -t my-app .
-                docker stop my-app || true
-                docker rm my-app || true
-                docker run -d -p 5000:5000 --name my-app my-app
+                sudo docker build -t my-app .
+                sudo docker stop my-app || true
+                sudo docker rm my-app || true
+                sudo docker run -d -p 5000:5000 --name my-app my-app
